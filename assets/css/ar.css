@@ -1,0 +1,22 @@
+.u-nav-1, .logo-ar{
+	display: flex!important;
+	flex-direction: row-reverse !important;
+}
+.u-header .u-image-1 {
+	margin: 15px 0px 0px auto !important;
+}
+.u-header .u-menu-1{
+	margin: 20px auto 19px 0 !important;
+}
+
+/*contact us*/
+.u-section-6 .u-icon-1 {
+    height: 22px;
+    width: 22px;
+    margin: 5px 0 0 auto;
+}
+.u-section-6 .u-text-2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: -22px 40px 0 1px;
+}
