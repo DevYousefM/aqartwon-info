@@ -345,43 +345,7 @@
       </div>
       <div class="u-clearfix u-gutter-30 u-layout-wrap unit-img u-layout-wrap-1">
         <div class="u-gutter-0 u-layout">
-          <div class="u-layout-col">
-            <div class="u-size-30">
-              <div class="u-layout-row">
-                <div class="u-container-style u-effect-slide-left u-hover-box u-hover-feature u-image u-image-round u-layout-cell u-radius-50 u-shading u-size-30 u-image-1 u-images" data-href="https://aqartown.com/en/category/Marketing-of-shops/Shops-for-rent" data-target="_blank" data-image-width="2000" data-image-height="2000">
-                  <div class="u-back-slide u-container-layout u-container-layouts"></div>
-                  <div class="u-container-layout u-gradient u-opacity u-opacity-25 u-over-slide u-valign-bottom u-container-layout-after">
-                    <h3 class="u-align-center u-custom-font u-font-lobster u-hover-feature u-text u-text-body-alt-color u-text-default unit-name u-text-unitName" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Shops</h3>
-                    <h4 class="u-text u-text-body-alt-color u-text-nb">01 </h4>
-                  </div>
-                </div>
-                <div class="u-container-style u-effect-slide-left u-hover-box u-hover-feature u-image u-image-round u-layout-cell u-radius-50 u-shading u-size-30 u-image-2 u-images" data-image-width="4500" data-image-height="4500" data-href="https://aqartown.com/en/category/Marketing-of-shops/Cafes-for-rent" data-target="_blank">
-                  <div class="u-back-slide u-container-layout u-container-layouts"></div>
-                  <div class="u-container-layout u-gradient u-opacity u-opacity-25 u-over-slide u-valign-bottom u-container-layout-after">
-                    <h3 class="u-align-center u-custom-font u-font-lobster u-hover-feature u-text u-text-body-alt-color u-text-default unit-name u-text-unitName">Cafes</h3>
-                    <h4 class="u-text u-text-body-alt-color u-text-nb">02</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="u-size-30">
-              <div class="u-layout-row">
-                <div class="u-container-style u-effect-slide-left u-hover-box u-hover-feature u-image u-image-round u-layout-cell u-radius-50 u-shading u-size-30 u-image-3 u-images" data-image-width="4000" data-image-height="4000" data-href="https://aqartown.com/en/category/Marketing-of-shops/Restaurants-for-rent" data-target="_blank">
-                  <div class="u-back-slide u-container-layout u-container-layouts"></div>
-                  <div class="u-container-layout u-gradient u-opacity u-opacity-25 u-over-slide u-valign-bottom u-container-layout-after">
-                    <h3 class="u-align-center u-custom-font u-font-lobster u-hover-feature u-text u-text-body-alt-color u-text-default unit-name u-text-unitName">Restaurants</h3>
-                    <h4 class="u-text u-text-body-alt-color u-text-nb">03</h4>
-                  </div>
-                </div>
-                <div class="u-container-style u-effect-slide-left u-hover-box u-hover-feature u-image u-image-round u-layout-cell u-radius-50 u-shading u-size-30 u-image-4 u-images" data-image-width="4500" data-image-height="4500" data-href="https://aqartown.com/en/category/Marketing-of-shops/Commercial-projects-for-rent" data-target="_blank">
-                  <div class="u-back-slide u-container-layout u-container-layouts"></div>
-                  <div class="u-container-layout u-gradient u-opacity u-opacity-25 u-over-slide u-valign-bottom u-container-layout-after">
-                    <h3 class="u-align-center u-custom-font u-font-lobster u-hover-feature u-text u-text-body-alt-color u-text-default unit-name u-text-unitName">Commercial projects</h3>
-                    <h4 class="u-text u-text-body-alt-color u-text-nb">04</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="u-layout-col " id="subcategoriesParent">
           </div>
         </div>
       </div>
