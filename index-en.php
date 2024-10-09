@@ -1,24 +1,3 @@
-<?php
-
-// $connect = new mysqli('localhost', 'root', '', 'aqartown');
-// $connect = new mysqli('localhost', 'landing_user', 'Aqar@town2023', 'aqar_website');
-// mysqli_set_charset($connect, 'utf8');
-// if ($connect->connect_error) {
-//   die("Connection failed: " . $connect->connect_error);
-// }
-// else
-// {
-//   $query = $connect->prepare("SELECT * FROM products ORDER BY id DESC limit 3");
-//   $query->execute();
-//   $result = $query->get_result();
-//   while($fetching = $result->fetch_array())
-//   {
-//       echo $fetching["name"]."<br>";
-//   }
-// }
-
-?>
-
 <!DOCTYPE html>
 <html style="font-size: 16px;">
 
@@ -36,6 +15,7 @@
   <meta name="referrer" content="origin">
   <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
   <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Lobster:400">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -264,7 +244,7 @@
     <div class="u-clearfix u-sheet u-sheet-1">
       <h2 class="u-text u-text-default u-text-1">Latest Rental Units</h2>
       <div class="u-clearfix u-custom-html u-custom-html-1">
-        <div class="u-custom-html-1" style="font-size:15vW;font-weight:bolder;opacity:0.1;color:#4a7298;z-index:4;" dir="ltr">Latest Rental Units</div>
+        <div class="u-custom-html-1" style="font-size: 5vW;font-weight:bolder;opacity:0.1;color:#4a7298;z-index:4;text-align: center;display: flex;align-items: center;justify-content: center;position: absolute;" dir="ltr">Latest Rental Units</div>
       </div>
       <div class="u-expanded-width u-list u-list-1">
         <div class="u-align-center u-repeater u-repeater-1" id="productsParent">
@@ -286,7 +266,7 @@
                   Commercial Leasing<br>
                   <br>
                 </h3>
-                <a href="https://aqartown.com/en/category/Commercial-Leasing" class="u-active-none u-align-center u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-dark-1 u-btn u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-1" target="_blank">learn more</a>
+                <a href="https://aqartown.com/en/category/Commercial-Leasing" class="u-active-none u-align-center u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-dark-1 u-btn u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-1 readmore" style="color: white !important;" target="_blank">learn more</a>
               </div>
             </div>
           </div>
@@ -299,7 +279,7 @@
                   <img src="images/10714335-61c3d05c.png" alt="">
                 </span>
                 <h3 class="u-align-center u-text u-text-default u-text-2"> Marketing Commercial Real Estate Projects</h3>
-                <a href="https://aqartown.com/en/category/Marketing-Commercial-Real-Estate-Projects" class="u-active-none u-align-center u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-dark-1 u-btn u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-2" target="_blank">learn more</a>
+                <a href="https://aqartown.com/en/category/Marketing-Commercial-Real-Estate-Projects" class="u-active-none u-align-center u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-dark-1 u-btn u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-2 readmore" style="color: white !important;" target="_blank">learn more</a>
               </div>
             </div>
           </div>
@@ -314,7 +294,7 @@
                 <h3 class="u-align-center u-text u-text-default u-text-3"> Commercial Real Estate Brokerage
                   <br>
                 </h3>
-                <a href="https://aqartown.com/en/category/Commercial-Real-Estate-Brokerage" class="u-active-none u-align-center u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-dark-1 u-btn u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-3" target="_blank">learn more</a>
+                <a href="https://aqartown.com/en/category/Commercial-Real-Estate-Brokerage" class="u-active-none u-align-center u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-dark-1 u-btn u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-3 readmore" style="color: white !important;" target="_blank">learn more</a>
               </div>
             </div>
           </div>
@@ -329,7 +309,7 @@
                 <h3 class="u-align-center u-text u-text-default u-text-4"> Commercial Real Estate Consultations
                   <br>
                 </h3>
-                <a href="https://aqartown.com/en/category/Commercial-Real-Estate-Consultations" class="u-active-none u-align-center u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-dark-1 u-btn u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-4" target="_blank">learn more</a>
+                <a href="https://aqartown.com/en/category/Commercial-Real-Estate-Consultations" class="u-active-none u-align-center u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-dark-1 u-btn u-button-style u-hover-none u-none u-text-palette-1-light-2 u-btn-4 readmore" style="color: white !important;" target="_blank">learn more</a>
               </div>
             </div>
           </div>
@@ -341,7 +321,7 @@
     <div class="u-clearfix u-sheet u-sheet-1">
       <h2 class="u-align-left u-subtitle u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000">RENTAL UNITS</h2>
       <div class="u-clearfix u-custom-html u-custom-html-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="" data-animation-delay="250">
-        <div class="u-custom-html-1" style="font-size:15vW;font-weight:bolder;opacity:0.1;color:#4a7298;z-index:4;">RENTAL UNITS</div>
+        <div class="u-custom-html-1" style="font-size: 5vW;font-weight:bolder;opacity:0.1;color:#4a7298;z-index:4;text-align: center;display: flex;align-items: center;justify-content: center;position: absolute;">RENTAL UNITS</div>
       </div>
       <div class="u-clearfix u-gutter-30 u-layout-wrap unit-img u-layout-wrap-1">
         <div class="u-gutter-0 u-layout">
@@ -354,7 +334,7 @@
   <section class="u-align-center u-clearfix u-section-7" id="Previouswork">
     <div class="u-clearfix u-sheet u-sheet-1">
       <div class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-align-left-xl u-clearfix u-custom-html u-custom-html-1">
-        <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1" style="font-size:15vW;font-weight:bolder;opacity:0.1;color:#4a7298;z-index:4;" dir="ltr"> previous work </div>
+        <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1" style="font-size: 5vW;font-weight:bolder;opacity:0.1;color:#4a7298;z-index:4;text-align: center;display: flex;align-items: center;justify-content: center;position: absolute;" dir="ltr"> previous work </div>
       </div>
       <h2 class="u-align-left u-custom-font u-font-montserrat u-text u-text-1">Previous work</h2>
       <div id="carousel-8627" data-interval="3000" data-u-ride="carousel" class="fff u-carousel u-expanded-width-lg u-expanded-width-xl u-slider u-slider-1">
@@ -990,15 +970,6 @@
       </div>
     </div>
   </footer>
-  <!-- <section class="u-backlink u-clearfix u-grey-80">
-        <span>Landing Page Template | </span>
-      <p class="u-text">
-        <span>Created by</span>
-      </p>
-      <a class="u-link" href="http://portfolio.doublvy.com/" target="_blank">
-        <span>Wael Mahfouz</span>
-      </a>. 
-    </section> -->
   <span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; right: 30px; bottom: 30px; padding: 20px; background-image: none;" class="u-back-to-top u-icon u-icon-circle u-opacity u-opacity-90 u-palette-1-base" data-href="#">
     <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use>
@@ -1010,6 +981,7 @@
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
   let lang = 'en';
 </script>

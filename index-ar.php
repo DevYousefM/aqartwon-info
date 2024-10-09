@@ -1,23 +1,3 @@
-<?php
-
-// $connect = new mysqli('localhost', 'landing_user', 'Aqar@town2023', 'aqar_website');
-// mysqli_set_charset($connect, 'utf8');
-// if ($connect->connect_error) {
-//   die("Connection failed: " . $connect->connect_error);
-// }
-// else
-// {
-//   $query = $connect->prepare("SELECT * FROM products ORDER BY id DESC limit 3");
-//   $query->execute();
-//   $result = $query->get_result();
-//   while($fetching = $result->fetch_array())
-//   {
-//       echo $fetching["name"]."<br>";
-//   }
-// }
-
-?>
-
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="ar">
 
@@ -34,9 +14,10 @@
   <meta name="generator" content="Nicepage 5.8.13, nicepage.com">
   <meta name="referrer" content="origin">
 
-  <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-  <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -103,7 +84,7 @@
       <div class="u-container-style u-custom-color-7 u-group u-hidden-md u-hidden-sm u-hidden-xs u-shape-rectangle u-group-1" data-animation-name="customAnimationIn" data-animation-duration="1000">
 
         <div class="u-container-layout u-container-layout-1">
-          <h1 class="u-align-center u-custom-font u-font-oswald u-text u-text-1"><?php echo $lang["getStarted"] ?><br></h1>
+          <h1 class="u-align-center u-custom-font u-font-cairo u-text u-text-1"><?php echo $lang["getStarted"] ?><br></h1>
 
           <p class="u-align-center u-large-text u-text u-text-body-alt-color u-text-variant u-text-2"><?php echo $lang["bookAnAppointment"] ?></p>
 
@@ -250,7 +231,7 @@
           <div class="u-layout-row">
             <div class="u-container-style u-layout-cell u-left-cell u-size-30-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-white u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
               <div class="u-container-layout u-valign-middle u-container-layout-1">
-                <h3 class="u-align-right u-text u-text-1"><?php echo $lang['about-front'] ?></h3>
+                <h3 class="u-align-center u-text u-text-1 mx-4"><?php echo $lang['about-front'] ?></h3>
                 <p class="about-text u-align-right u-text u-text-2"><?php echo $lang['aboutus-parag'] ?></p>
                 <a href="<?php echo $lang['mainURL'] ?>/about-us" class="u-active-black u-align-right u-border-2 u-border-active-black u-border-custom-color-3 u-border-hover-custom-color-5 u-btn u-btn-round u-button-style u-hover-custom-color-3 u-none u-radius-50 u-text-active-white u-text-body-color u-text-hover-white u-btn-1"><?php echo $lang['readMore'] ?></a>
               </div>
@@ -264,11 +245,8 @@
     </div>
   </section>
   <section class="u-clearfix u-section-8" id="sec-7660">
-    <div class="u-clearfix u-sheet u-sheet-1">
-      <h2 class="u-align-right u-text u-text-1"><?php echo $lang['latestRentalUnits-title'] ?></h2>
-      <div class="u-clearfix u-custom-html u-custom-html-1">
-        <div style="font-size:15vW;font-weight:bolder;opacity:0.1;color:#4a7298;z-index:4;" dir="rtl"><?php echo $lang['latestRentalUnits-title'] ?></div>
-      </div>
+    <div class="u-clearfix">
+      <h2 class="u-align-center u-text u-text-1 m-4 my-5"><?php echo $lang['latestRentalUnits-title'] ?></h2>
       <div class="u-expanded-width u-list u-list-1">
         <div class="u-align-center u-repeater u-repeater-1" id="productsParent">
         </div>
@@ -282,19 +260,19 @@
           <div class="u-container-style u-custom-item u-list-item u-repeater-item u-list-item-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="X" data-animation-delay="1000">
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1"><span class="u-file-icon u-icon u-text-white u-icon-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250" data-animation-direction=""><img src="images/5442183-22f9599d.png" alt=""></span>
               <h3 class="u-align-center u-text u-text-body-alt-color u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250"><?php echo $lang['Commercial-Real-Estate-Consultations'] ?></h3>
-              <a href="https://aqartown.com/ar/category/%D8%A5%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9" class="u-border-2 u-border-custom-color-3 u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-none u-text-palette-1-light-1 u-btn-1" target="_blank"><?php echo $lang['readMore2'] ?></a>
+              <a href="https://aqartown.com/ar/category/%D8%A5%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9" class="text-white text-center text-decoration-none readmore mt-5 py-2 " target="_blank"><?php echo $lang['readMore2'] ?></a>
             </div>
           </div>
           <div class="u-align-center u-container-style u-custom-item u-list-item u-repeater-item u-list-item-2" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="750">
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2"><span class="u-file-icon u-icon u-text-white u-icon-2" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250" data-animation-direction=""><img src="images/6888097-1c407584.png" alt=""></span>
               <h3 class="u-align-center u-text u-text-body-alt-color u-text-default u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250"><?php echo $lang['Commercial-Real-Estate-Brokerage'] ?></h3>
-              <a href="https://aqartown.com/ar/category/%D8%A7%D9%84%D9%88%D8%B3%D8%A7%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9" class="u-border-2 u-border-custom-color-3 u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-none u-text-palette-1-light-1 u-btn-2" target="_blank"><?php echo $lang['readMore2'] ?></a>
+              <a href="https://aqartown.com/ar/category/%D8%A7%D9%84%D9%88%D8%B3%D8%A7%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9" class="text-white text-center text-decoration-none readmore mt-5 py-2 " target="_blank"><?php echo $lang['readMore2'] ?></a>
             </div>
           </div>
           <div class="u-container-style u-custom-item u-list-item u-repeater-item u-list-item-3" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="500">
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3"><span class="u-file-icon u-icon u-text-white u-icon-3" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250" data-animation-direction=""><img src="images/10714335-61c3d05c.png" alt=""></span>
               <h3 class="u-align-center u-text u-text-body-alt-color u-text-default u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250"><?php echo $lang['Marketing-Commercial-Real-Estate-Projects'] ?></h3>
-              <a href="https://aqartown.com/ar/category/%D8%AA%D8%B3%D9%88%D9%8A%D9%82%20%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9" class="u-border-2 u-border-custom-color-3 u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-none u-text-palette-1-light-1 u-btn-3" target="_blank"><?php echo $lang['readMore2'] ?></a>
+              <a href="https://aqartown.com/ar/category/%D8%AA%D8%B3%D9%88%D9%8A%D9%82%20%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9" class="text-white text-center text-decoration-none readmore mt-5 py-2 " target="_blank"><?php echo $lang['readMore2'] ?></a>
             </div>
           </div>
           <div class="u-container-style u-custom-item u-list-item u-repeater-item u-list-item-4" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250">
@@ -302,7 +280,7 @@
               <h3 class="u-align-center u-text u-text-body-alt-color u-text-default u-text-4" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250"><?php echo $lang['Commercial-Leasing'] ?><br>
                 <br>
               </h3>
-              <a href="https://aqartown.com/ar/category/%D8%A7%D9%84%D8%AA%D8%A3%D8%AC%D9%8A%D8%B1%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A" class="u-border-2 u-border-custom-color-3 u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-none u-text-palette-1-light-1 u-btn-4" target="_blank"><?php echo $lang['readMore2'] ?></a>
+              <a href="https://aqartown.com/ar/category/%D8%A7%D9%84%D8%AA%D8%A3%D8%AC%D9%8A%D8%B1%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A" class="text-white text-center text-decoration-none readmore mt-5 py-2 " style="color: white;" target="_blank"><?php echo $lang['readMore2'] ?></a>
             </div>
           </div>
         </div>
@@ -311,9 +289,9 @@
   </section>
   <section class="u-align-left u-clearfix u-grey-5 u-section-4" id="Rentalunits">
     <div class="u-clearfix u-sheet u-sheet-1">
-      <h2 class="u-align-right u-text u-text-1"><?php echo $lang['rentalUnits-title'] ?></h2>
+      <h2 class="u-align-center u-text u-text-1 m-4"><?php echo $lang['rentalUnits-title'] ?></h2>
       <div class="u-clearfix u-custom-html u-custom-html-1">
-        <div class="u-align-right u-clearfix u-custom-html u-expanded-width u-custom-html-1" style="font-size:15vW;font-weight:bolder;opacity:0.1;color:#4a7298;z-index:4;" dir="rtl"><?php echo $lang['rentalUnits-title'] ?></div>
+        <div class="u-align-right u-clearfix u-custom-html u-expanded-width u-custom-html-1" style="font-size: 5vW;font-weight:bolder;opacity:0.1;color:#4a7298;z-index:4;text-align: center;display: flex;align-items: center;justify-content: center;position: absolute;" dir="rtl"><?php echo $lang['rentalUnits-title'] ?></div>
       </div>
       <div class="u-clearfix u-gutter-30 u-layout-wrap unit-img u-layout-wrap-1">
         <div class="u-gutter-0 u-layout">
@@ -329,10 +307,12 @@
   </section>
   <section class="u-align-center u-clearfix u-section-7" id="Previouswork">
     <div class="u-clearfix u-sheet u-sheet-1">
-      <div class="u-align-right u-clearfix u-custom-html u-expanded-width u-custom-html-1">
-        <div class="u-align-right u-clearfix u-custom-html u-expanded-width u-custom-html-1" style="font-size:15vW;font-weight:bolder;opacity:0.1;color:#4a7298;z-index:4;" dir="rtl"><?php echo $lang['previous-work'] ?></div>
+      <h2 class="u-align-center u-text u-text-1 m-4"><?php echo $lang['previous-work'] ?></h2>
+      <div class="u-clearfix u-custom-html u-custom-html-1">
+        <div class="u-align-right u-clearfix u-custom-html u-expanded-width u-custom-html-1" style="font-size: 5vW;font-weight:bolder;opacity:0.1;color:#4a7298;z-index:4;text-align: center;display: flex;align-items: center;justify-content: center;position: absolute;" dir="rtl">
+          <?php echo $lang['previous-work'] ?>
+        </div>
       </div>
-      <h2 class="u-align-right u-custom-font u-font-montserrat u-text u-text-1"><?php echo $lang['previous-work'] ?></h2>
       <div id="carousel-8627" data-interval="3000" data-u-ride="carousel" class="fff u-carousel u-expanded-width-lg u-expanded-width-xl u-slider u-slider-1">
         <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
           <li data-u-target="#carousel-8627" class="u-active u-grey-30 u-shape-circle" data-u-slide-to="0" style="height: 10px; width: 10px;"></li>
@@ -978,6 +958,7 @@
     </svg>
   </span>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
   let lang = 'ar';
 </script>
