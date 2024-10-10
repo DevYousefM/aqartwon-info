@@ -53,4 +53,53 @@ $(document).ready(function () {
       });
     },
   });
+  $.ajax({
+    url: "http://127.0.0.1:8000/api/info/latestwork",
+    type: "GET",
+    data: {
+      lang,
+    },
+    success: function (response) {
+      let count = 0;
+      let work_card = "";
+      response.forEach((work, index) => {
+        let single = `
+          <div class="u-effect-hover-zoom u-gallery-item u-gallery-item-24">
+            <div class="u-back-slide" data-image-width="225" data-image-height="225">
+              <img class="u-back-image u-expanded" src="${work.image}">
+            </div>
+          </div>
+        `;
+
+        if (count === 0) {
+          work_card += `
+            <div class="${
+              index === 0 ? "u-active" : ""
+            } u-carousel-item u-container-style u-slide">
+              <div class="u-container-layout u-container-layout-8">
+                <div class="u-align-center u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-none u-gallery-9">
+                  <div class="u-gallery-inner u-gallery-inner-9">
+          `;
+        }
+
+        work_card += single;
+
+        count++;
+
+        if (count === 3 || index === response.length - 1) {
+          work_card += `
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+
+          $("#latestworks").append(work_card);
+
+          work_card = "";
+          count = 0;
+        }
+      });
+    },
+  });
 });
