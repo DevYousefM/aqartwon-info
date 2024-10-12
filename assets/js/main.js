@@ -133,20 +133,21 @@ $(document).ready(function () {
   });
 });
 function submitContactForm() {
-  // contactForm
   let form = $("#contactForm");
   $.ajax({
     url: baseUrl + "/api/info/store-request",
     type: "POST",
-    data: form.serialize(),
+    data: form.serialize() + "&lang=" + lang,
     success: function (response) {
       if (response.status == true) {
         $("#sucess_message").text(response.msg);
         $("#sucess_message").show();
+        form[0].reset();
       } else {
         $("#error_message").text(response.msg);
         $("#error_message").show();
       }
+
     },
   });
 }

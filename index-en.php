@@ -431,18 +431,44 @@
                 </div>
               </div>
             </div>
-            <div class="u-align-center u-container-align-center-md u-container-align-center-sm u-container-align-center-xs u-container-style u-layout-cell u-size-30-lg u-size-30-xl u-size-34-md u-size-34-sm u-size-34-xs u-white u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
-              <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-5">
-                <div class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-form u-form-1">
-                  <form action="controller.php" class="u-clearfix u-form-spacing-28 u-inner-form" style="padding: 0px;" source="email" name="form" method="POST" id="contact-form">
-                    <div class="u-form-group u-form-name u-label-none u-form-partition-factor-2">
-                      <input type="text" placeholder="FULL NAME" id="name-5a14" name="fullName" class="u-border-2 u-border-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
+            <div class="u-align-center u-container-style u-layout-cell u-size-30 u-white u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250">
+              <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-container-layout-1">
+                <div class="u-align-left u-form ">
+                  <form id="contactForm" class="u-clearfix u-form-spacing-28 u-inner-form" style="padding: 0px;" source="email" name="form" method="POST" id="contact-form">
+                    <div class="form-group row text-center">
+                      <div class="col-sm-4">
+                        <div class="form-check-inline">
+                          <input class="ms-2" type="radio" name="type" id="type-search" value="search" checked>
+                          <label class="form-check-label" for="type-search"><?php echo $lang['search']; ?></label>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="form-check-inline">
+                          <input class="ms-2" type="radio" name="type" id="type-show" value="show">
+                          <label class="form-check-label" for="type-show"><?php echo $lang['show']; ?></label>
+                        </div>
+                      </div>
                     </div>
-                    <div class="u-form-email u-form-group u-form-partition-factor-2 u-label-none">
-                      <input type="email" placeholder="E-MAIL ADDRESS" id="email-5a14" name="email" class="u-border-2 u-border-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
+
+                    <div class="u-form-group u-form-name u-form-partition-factor-2 u-label-none">
+                      <input type="text" placeholder="<?php echo $lang['fullName'] ?>" id="name-5a14" name="name" class="u-border-2 u-border-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-none" required="" dir="ltr">
                     </div>
-                    <div class="u-form-group u-label-none u-form-group-3">
-                      <input type="hidden" name="phone" id="countryCode-contact">
+                    <div class="u-form-group u-form-name u-form-partition-factor-2 u-label-none">
+                      <select id="areaSelect" name="area" class="u-border-2 u-border-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-none">
+                        <option value="" selected><?php echo $lang['select_area'] ?></option>
+                      </select>
+                    </div>
+                    <div class="u-form-group u-form-name u-form-partition-factor-2 u-label-none">
+                      <select id="budgetSelect" name="budget" class="u-border-2 u-border-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-none">
+                        <option value="" selected><?php echo $lang['select_budget'] ?></option>
+                      </select>
+                    </div>
+                    <div class="u-form-group u-form-name u-form-partition-factor-2 u-label-none">
+                      <select name="time_to_call" class="u-border-2 u-border-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-none">
+                        <option value="" selected><?php echo $lang['select_time_to_call'] ?></option>
+                        <option value="من 1 الي 3"><?php echo $lang['from_1_3'] ?></option>
+                        <option value="من 5 الي 8"><?php echo $lang['from_5_8'] ?></option>
+                      </select>
                     </div>
                     <div class="u-form-group u-form-phone u-label-none u-phone-contact">
                       <div class="iti iti--allow-dropdown">
@@ -450,21 +476,21 @@
                           <div class="iti__selected-flag" role="combobox" aria-controls="iti-0__country-listbox" aria-owns="iti-0__country-listbox" aria-expanded="false" tabindex="0" title="United States: +1" aria-activedescendant="iti-0__item-us-preferred"><!--div class="iti__flag iti__us"></div-->
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="112px" height="112px" viewBox="0 0 112 112" enable-background="new 0 0 112 112" xml:space="preserve" style="width: 1.2em; height: 1.2em;">
                               <path fill="#EDEDED" d="M51.3,63.9V96h-3.5V70.7L11,96H7.1l39.8-27.3h-7.8L0,95.5v-7.8l27.5-19H0v-4.8C0,63.9,51.3,63.9,51.3,63.9z
-                                	 M61.7,96h3.4V70.7l37,25.3h9.9v-0.8L73.2,68.7H81l31,21.2v-3.1L85.4,68.7H112v-4.8H61.7V96z M51.3,16h-3.5v26.9L8.8,16H0v0.8
-                              	   l40.9,28.1h-7.7L0,22.1v3.8l27.5,19H0v4.8h51.3V16z M67.3,44.9L109.4,16h-5.1L65.1,42.9V16h-3.4v33.7H112v-4.8H85.4L112,26.6v-7
-                              	   L75,44.9H67.3z"></path>
+                                   M61.7,96h3.4V70.7l37,25.3h9.9v-0.8L73.2,68.7H81l31,21.2v-3.1L85.4,68.7H112v-4.8H61.7V96z M51.3,16h-3.5v26.9L8.8,16H0v0.8
+                                   l40.9,28.1h-7.7L0,22.1v3.8l27.5,19H0v4.8h51.3V16z M67.3,44.9L109.4,16h-5.1L65.1,42.9V16h-3.4v33.7H112v-4.8H85.4L112,26.6v-7
+                                   L75,44.9H67.3z"></path>
                               <path fill="#1A237B" d="M65.1,42.9V16h39.2L65.1,42.9z M47.8,16h-39l39,26.9V16z M112,44.9V26.6L85.4,44.9H112z M112,86.8V68.7H85.4
-                              	L112,86.8z M11,96h36.8V70.7L11,96z M65.1,96h37l-37-25.3V96z M0,68.7v19l27.5-19H0z M0,25.9v19h27.5L0,25.9z"></path>
+                                L112,86.8z M11,96h36.8V70.7L11,96z M65.1,96h37l-37-25.3V96z M0,68.7v19l27.5-19H0z M0,25.9v19h27.5L0,25.9z"></path>
                               <path fill="#BD0034" d="M112,16v3.6L75,44.9h-7.7L109.4,16H112z M73.2,68.7L112,95.2v-5.3L81,68.7H73.2z M40.9,44.9L0,16.8v5.3
-                              	l33.2,22.8C33.2,44.9,40.9,44.9,40.9,44.9z M39.1,68.7L0,95.5V96h7.1l39.8-27.3H39.1z M61.7,16H51.3v33.7H0v14.2h51.3V96h10.4V63.9
-                              	H112V49.7H61.7V16z"></path>
+                                l33.2,22.8C33.2,44.9,40.9,44.9,40.9,44.9z M39.1,68.7L0,95.5V96h7.1l39.8-27.3H39.1z M61.7,16H51.3v33.7H0v14.2h51.3V96h10.4V63.9
+                                H112V49.7H61.7V16z"></path>
                             </svg>
                             <div class="iti__arrow"></div>
                           </div>
                         </div>
-                        <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="PHONE NUMBER" id="phone-contact" name="phoneInput" class="u-border-2 u-border-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="" value="">
+                        <input type="tel" name="phone" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="PHONE NUMBER" id="phone-contact" name="phoneInput" class="u-border-2 u-border-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
                         <script type="text/javascript">
-                          $("#contact-form").on('click keyup change', function() {
+                          $("#contactForm").on('click keyup change', function() {
                             var country = $(".u-phone-contact .iti__selected-flag").attr("title");
                             var code = country.split(': ')[1];
                             var val = $("#phone-contact").val();
@@ -474,20 +500,16 @@
 
                       </div>
                     </div>
-                    <div class="u-form-group u-label-none">
-                      <input type="text" placeholder="SUBJECT" id="text-a2e2" name="subject" class="u-border-2 u-border-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle">
-                    </div>
                     <div class="u-form-group u-form-message u-label-none">
-                      <textarea rows="4" cols="50" id="message-5a14" name="msg" class="u-border-2 u-border-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="" placeholder="MESSAGE"></textarea>
+                      <textarea dir="ltr" rows="4" cols="50" id="message-5a14" name="notes" class="u-border-2 u-border-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-none" placeholder="<?php echo $lang['notes'] ?>"></textarea>
                     </div>
                     <div class="u-align-left u-form-group u-form-submit u-label-none">
-                      <a href="#" class="u-active-black u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-color-4 u-hover-custom-color-5 u-radius-50 u-btn-4">Submit</a>
-                      <input type="submit" value="submit" class="u-form-control-hidden" wfd-invisible="true" name="contactMessage">
+                      <button type="button" onclick="submitContactForm()" class="u-active-black u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-custom-color-5 u-palette-3-base u-radius-50 col-12 px-5"><?php echo $lang['submit'] ?></button>
                     </div>
-                    <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Thank you! Your message has been sent. </div>
-                    <div class="u-form-send-error u-form-send-message" wfd-invisible="true"> Unable to send your message. Please fix errors then try again. </div>
-                    <input type="hidden" value="" name="recaptchaResponse" wfd-invisible="true">
-                    <input type="hidden" name="formServices" value="5a1fafe913e166a06530e82ef3fe2883">
+                    <div class="u-form-send-message u-form-send-success position-relative" wfd-invisible="true" id="sucess_message"> Thank you! Your message has been sent. </div>
+                    <div class="u-form-send-error u-form-send-message position-relative" wfd-invisible="true" id="error_message"> Unable to send your message. Please fix errors then try again. </div>
+                    <input dir="rtl" type="hidden" value="" name="recaptchaResponse" wfd-invisible="true">
+                    <input dir="rtl" type="hidden" name="formServices" value="5a1fafe913e166a06530e82ef3fe2883">
                   </form>
                 </div>
               </div>
