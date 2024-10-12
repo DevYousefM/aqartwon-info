@@ -1,9 +1,10 @@
 console.log("HERE");
 
+let baseUrl = "http://127.0.0.1:8000";
 $(document).ready(function () {
   // productsParent
   $.ajax({
-    url: "https://aqartown.com/api/info/products", // The route or URL where the request will be sent
+    url: baseUrl + "/api/info/products", // The route or URL where the request will be sent
     type: "GET",
     data: {
       lang,
@@ -23,7 +24,7 @@ $(document).ready(function () {
     },
   });
   $.ajax({
-    url: "https://aqartown.com/api/info/subcategories", // The route or URL where the request will be sent
+    url: baseUrl + "/api/info/subcategories", // The route or URL where the request will be sent
     type: "GET",
     data: {
       lang,
@@ -54,7 +55,7 @@ $(document).ready(function () {
     },
   });
   $.ajax({
-    url: "http://127.0.0.1:8000/api/info/latestwork",
+    url: baseUrl + "/api/info/latestwork",
     type: "GET",
     data: {
       lang,
@@ -102,4 +103,50 @@ $(document).ready(function () {
       });
     },
   });
+  $.ajax({
+    url: baseUrl + "/api/info/info-areas",
+    type: "POST",
+    data: {
+      lang,
+    },
+    success: function (response) {
+      response.forEach((area) => {
+        $("#areaSelect").append(
+          `<option value="${area.id}">${area.name}</option>`
+        );
+      });
+    },
+  });
+  $.ajax({
+    url: baseUrl + "/api/info/info-budgets",
+    type: "POST",
+    data: {
+      lang,
+    },
+    success: function (response) {
+      response.forEach((budget) => {
+        $("#budgetSelect").append(
+          `<option value="${budget.id}">${budget.name}</option>`
+        );
+      });
+    },
+  });
 });
+function submitContactForm() {
+  // contactForm
+  let form = $("#contactForm");
+  $.ajax({
+    url: baseUrl + "/api/info/store-request",
+    type: "POST",
+    data: form.serialize(),
+    success: function (response) {
+      if (response.status == true) {
+        $("#sucess_message").text(response.msg);
+        $("#sucess_message").show();
+      } else {
+        $("#error_message").text(response.msg);
+        $("#error_message").show();
+      }
+    },
+  });
+}
