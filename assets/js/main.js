@@ -142,12 +142,13 @@ function submitContactForm() {
       if (response.status == true) {
         $("#sucess_message").text(response.msg);
         $("#sucess_message").show();
+        $("#error_message").hide();
         form[0].reset();
       } else {
         $("#error_message").text(response.msg);
         $("#error_message").show();
+        $("#sucess_message").hide();
       }
-
     },
   });
 }
