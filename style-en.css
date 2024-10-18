@@ -13,7 +13,7 @@ body {
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 718px;
+  min-height: 90vh;
 }
 .u-form-spacing-10 .u-form-group,
 .u-form-spacing-10 .u-form-step .u-form-group {
@@ -46,7 +46,7 @@ body {
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
-  margin: 186px 11px 0 auto;
+  margin: 100px 11px 0 auto;
 }
 
 .u-section-1 .u-group-1 {
@@ -165,7 +165,7 @@ body {
 
 @media (max-width: 1199px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 613px;
+    min-height: 110vh;
   }
 
   .u-section-1 .u-btn-1 {
@@ -177,7 +177,7 @@ body {
   .u-section-1 .u-shape-1 {
     width: 372px;
     height: 469px;
-    margin-top: 119px;
+    margin-top: 88px;
     margin-right: -11px;
   }
 
@@ -221,7 +221,7 @@ body {
 
 @media (max-width: 991px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 789px;
+    min-height: 100vh;
   }
 
   .u-section-1 .u-btn-1 {
@@ -3262,4 +3262,7 @@ body {
 }
 .card > * {
   z-index: 99;
+}
+option {
+  color: black;
 }

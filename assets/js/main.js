@@ -111,7 +111,7 @@ $(document).ready(function () {
     },
     success: function (response) {
       response.forEach((area) => {
-        $("#areaSelect").append(
+        $(".areaSelect").append(
           `<option value="${area.id}">${area.name}</option>`
         );
       });
@@ -125,29 +125,32 @@ $(document).ready(function () {
     },
     success: function (response) {
       response.forEach((budget) => {
-        $("#budgetSelect").append(
+        $(".budgetSelect").append(
           `<option value="${budget.id}">${budget.name}</option>`
         );
       });
     },
   });
 });
-function submitContactForm() {
-  let form = $("#contactForm");
+function submitContactForm(e) {
+  let form = $(e.target).closest("form");
+  let success_message = form.find(".sucess_message");
+  let error_message = form.find(".error_message");
+
   $.ajax({
     url: baseUrl + "/api/info/store-request",
     type: "POST",
     data: form.serialize() + "&lang=" + lang,
     success: function (response) {
       if (response.status == true) {
-        $("#sucess_message").text(response.msg);
-        $("#sucess_message").show();
-        $("#error_message").hide();
+        success_message.text(response.msg);
+        success_message.removeClass("d-none").show();
+        error_message.hide();
         form[0].reset();
       } else {
-        $("#error_message").text(response.msg);
-        $("#error_message").show();
-        $("#sucess_message").hide();
+        error_message.text(response.msg);
+        error_message.removeClass("d-none").show();
+        success_message.hide();
       }
     },
   });

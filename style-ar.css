@@ -32,7 +32,7 @@ footer {
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 728px;
+  min-height: 90vh;
 }
 
 .u-section-1 .u-shape-1 {
@@ -42,7 +42,7 @@ footer {
   --animation-custom_in-translate_x: -300px;
   --animation-custom_in-scale: 1;
   --animation-custom_in-translate_y: 0px;
-  margin: 205px auto 0 0;
+  margin: 100px auto 0 0;
 }
 
 .u-section-1 .u-group-1 {
@@ -200,7 +200,7 @@ footer {
 
   .u-section-1 .u-shape-1 {
     height: 514px;
-    margin-top: 177px;
+    margin-top: 88px;
   }
 
   .u-section-1 .u-group-1 {
@@ -3183,4 +3183,7 @@ footer {
   height: 2px;
   background-color: white;
   transform: translateX(-50%);
+}
+option{
+  color: black;
 }
