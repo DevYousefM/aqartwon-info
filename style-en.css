@@ -13,7 +13,7 @@ body {
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 90vh;
+  min-height: 100vh;
 }
 .u-form-spacing-10 .u-form-group,
 .u-form-spacing-10 .u-form-step .u-form-group {
@@ -221,7 +221,7 @@ body {
 
 @media (max-width: 991px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 100vh;
+    min-height: 110vh;
   }
 
   .u-section-1 .u-btn-1 {
