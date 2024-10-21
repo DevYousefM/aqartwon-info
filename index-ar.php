@@ -196,7 +196,7 @@
               </div>
             </div>
 
-            <div class="u-form-group u-form-name u-form-partition-factor-2 u-label-none">
+            <div class="u-form-group u-form-name u-form-partition-factor-2 u-label-none text-white">
               <input type="text" placeholder="<?php echo $lang['fullName'] ?>" id="name-5a14" name="name" class="u-border-2 u-border-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-none" required="" dir="rtl">
             </div>
             <div class="u-form-group u-form-name u-form-partition-factor-2 u-label-none">
@@ -721,7 +721,7 @@
     </svg>
   </span>
 </body>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/custom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
   let lang = 'ar';
