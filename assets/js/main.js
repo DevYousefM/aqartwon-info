@@ -1,6 +1,6 @@
 console.log("HERE");
 
-let baseUrl = "http://127.0.0.1:8000";
+let baseUrl = "https://aqartown.com";
 $(document).ready(function () {
   // productsParent
   $.ajax({
